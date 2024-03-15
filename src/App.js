@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import ProductList from './features/product-list/ProductList';
 import Home from './pages/Home';
 import Login from './features/auth/components/Login';
+import Cart from './features/cart/Cart';
 import LoginPage from './pages/LoginPage';
 import {
   createBrowserRouter,
@@ -11,6 +12,7 @@ import {
   Link,
 } from "react-router-dom";
 import SignUpPage from './pages/SignUpPage';
+import { CartPage } from './pages/CartPage';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <SignUpPage></SignUpPage>,
+  },
+  {
+    path: "/cart",
+    element: <CartPage></CartPage>,
   }
 ]);
 function App() {
